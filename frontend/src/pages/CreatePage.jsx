@@ -23,7 +23,6 @@ const CreatePage = () => {
   const handleAddProduct = async () => {
     const { success, message } = await createProduct(newProduct);
 
-    // TODO: Replace with toaster.create()
     toaster.create({
       title: "Success",
       description: message,
